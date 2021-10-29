@@ -20,7 +20,7 @@ const generateHTML = function (teamString) {
 
 <div class="header">
 <div class="jumbotron bg-danger">
-   <h1 class="display-4 text-white text-center">My Team</h1>
+   <h1 class="display-4 text-white text-center">Blackwell's Super Awesome Team</h1>
 </div>
 </div>
 
@@ -67,7 +67,7 @@ const generateCard = function (arr) {
 
         <div class="card-body">
             <ul class="list-unstyled">
-                <li>Employee ID: ${arr.id}</li>
+                <li>ID: ${arr.id}</li>
                 <li>Email: <a href="mailto:${arr.email}">${arr.email}</a></li>
                 <li>${roleInfo}</li>
             </ul>
