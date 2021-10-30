@@ -40,19 +40,14 @@ const generateHTML = function (teamString) {
 // Generates cards for each employee class based on user input in Inquirer
 const generateCard = function (arr) {
 
-    // Fontawesome Icons change based on role
-    let positionIcon;
     // Criteria for display
     let roleInfo;
 
     if (arr.title === "Manager") {
-        positionIcon = `<i class="fas fa-mug-hot"></i>`
         roleInfo = `Office Number: ${arr.officeNumber}`
     } else if (arr.title === "Engineer") {
-        positionIcon = `<i class="fas fa-glasses"></i>`
         roleInfo = `GitHub Username: <a href="https://github.com/${arr.github}" target="_blank">${arr.github}</a>`
     } else if (arr.title === "Intern") {
-        positionIcon = `<i class="fas fa-user-graduate"></i>`
         roleInfo = `School: ${arr.school}`
     }
 
@@ -62,7 +57,6 @@ const generateCard = function (arr) {
     <div class="card shadow-lg mb-5 bg-white rounded">
         <div class="card-header bg-primary">
             <h4 class="text-white text-center">${arr.name}</h4>  
-            <h4 class="text-white text-center">${positionIcon}</i> ${arr.title}</h4>
         </div>
 
         <div class="card-body">
