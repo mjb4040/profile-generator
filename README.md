@@ -1,5 +1,5 @@
 # Profile Generator using Node.js 
-## https://mjb4040.github.io/profile-generator/
+## Repo URL: https://github.com/mjb4040/profile-generator
 
 ## User Story 
 AS A manager
